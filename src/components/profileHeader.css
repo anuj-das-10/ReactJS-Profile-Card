@@ -1,0 +1,152 @@
+.header {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+
+.social-icons {
+    /* width: 50px; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    gap: .3rem;
+}
+
+.social-icons a {
+    color: white;
+}
+
+.icons {
+    font-size: 1.2rem;
+    transition: all .2s;
+    border-radius: 100%;
+}
+
+.social-icons a:hover > .icons {
+    cursor: pointer;
+    color: aqua;
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 20px aqua);
+}
+
+#icon1 {
+    transform: translate(130px, 10px)
+}
+#icon2 {
+    transform: translate(110px, 10px)
+}
+#icon3 {
+    transform: translate(104px, 10px)
+}
+#icon4 {
+    transform: translate(110px, 10px)
+}
+#icon5 {
+    transform: translate(130px, 10px)
+}
+
+
+img {
+    margin-top: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+span {
+    padding: .5rem 2rem;
+    background-color: purple;
+    border-radius: 10rem 1rem 10rem 1rem;
+
+}
+.bio h1 {
+    font-size: 1.7rem;
+}
+
+.bio p {
+    color: slategray;
+}
+
+.bio h3 {
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+    color: slategray;
+}
+
+#skill {
+background: transparent;
+padding: 0;
+}
+
+
+.bio h3 > span {
+    padding: .2rem .5rem;
+    color: antiquewhite;
+    background-color: rgba(37, 116, 78, 0.413);
+    border-radius: 8px;
+}
+
+
+/* Responsiveness */
+
+@media (max-width: 970px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        margin-top: 1rem;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #icon1, #icon2, #icon3, #icon4, #icon5 {
+        transform: translate(0px, 0px)
+    }
+
+    .bio h1 {
+        font-size: 1.2rem;
+        font-weight: 300;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bio h1 span{
+        margin-top: .5rem;
+        font-weight: bold;
+    }
+
+    .bio p {
+        text-align: center;
+        margin-top: .5rem;
+        color: burlywood;
+    }   
+}
+
+
+@media (max-width: 540px) {
+    #skill {
+        display: none;
+    }
+
+    .bio h3 {
+        font-size: .8rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .bio h3 {
+        font-size: .7rem;
+    }
+}

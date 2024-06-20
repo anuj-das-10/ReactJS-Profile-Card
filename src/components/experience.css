@@ -1,0 +1,57 @@
+.experience-card {
+    padding: .5rem;
+    background: rgba(9, 106, 83, 0.204);
+    border-radius: 5px;
+    width: 22rem;
+    transition: all .2s;
+}
+
+.experience-card:hover {
+    transform: scale(1.01);
+    border: 1px solid rgba(9, 106, 83, 0.204);
+    box-shadow: 0 0 10px rgba(19, 199, 157, 0.415);
+}
+
+.experience-card .duration {
+    font-size: .7rem;
+    color: rgb(151, 173, 196);
+}
+
+.experience-card .role {
+    margin-bottom: .3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.experience-card .org {
+    font-size: .9rem;
+    color: rgb(151, 173, 196);
+    font-style: italic;
+}
+
+
+.experience-card .learning {
+    font-size: .8rem;
+    font-weight: 200;
+    color: rgb(202, 202, 192);
+}
+
+
+
+
+
+@media (max-width: 810px) {
+    .experience-card {
+      width: 20rem;
+    }
+
+    .org {
+        margin-top: 1rem;
+    }
+
+    .learning {
+        margin-top: .5rem;
+        font-size: .9rem;
+    }
+}
+

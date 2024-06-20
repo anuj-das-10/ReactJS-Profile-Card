@@ -1,0 +1,30 @@
+.education-card {
+    padding: .5rem;
+    background: rgba(42, 48, 54, 0.527);
+    border-radius: 5px;
+    width: 20rem;
+    transition: all .2s;
+}
+
+.education-card:hover {
+    transform: scale(1.01);
+    border: 1px solid rgba(83, 95, 106, 0.527);
+    box-shadow: 0 0 10px slategray;
+}
+
+.education-card .duration {
+    font-size: .7rem;
+    color: rgb(151, 173, 196);
+}
+
+.education-card .degree {
+    margin-bottom: .3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.education-card .institute {
+    font-size: .9rem;
+    color: rgb(151, 173, 196);
+    font-style: italic;
+}
